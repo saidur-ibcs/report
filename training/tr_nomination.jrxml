@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="nomination" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5b6120f0-5cfc-4cf9-8532-8f2766f918d7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Nomination"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="f9d6d2d4-0079-4066-880d-b1c0d1dc7514">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Nomination"/>
+		<queryString language="json">
+			<![CDATA[data.nominationDescriptionDtos.DESCRIPTION_1]]>
+		</queryString>
+		<field name="serialNo" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="serialNo"/>
+			<fieldDescription><![CDATA[serialNo]]></fieldDescription>
+		</field>
+		<field name="sectionType" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="sectionType"/>
+			<fieldDescription><![CDATA[sectionType]]></fieldDescription>
+		</field>
+		<field name="description" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="description"/>
+			<fieldDescription><![CDATA[description]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="e2f27db9-f35f-45b4-ae0b-f41230e8780e">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Nomination"/>
+		<queryString language="json">
+			<![CDATA[data.trainingNominationEmpListDtos]]>
+		</queryString>
+		<field name="id" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="id"/>
+			<fieldDescription><![CDATA[id]]></fieldDescription>
+		</field>
+		<field name="empName" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="empName"/>
+			<fieldDescription><![CDATA[empName]]></fieldDescription>
+		</field>
+		<field name="rankName" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="rankName"/>
+			<fieldDescription><![CDATA[rankName]]></fieldDescription>
+		</field>
+		<field name="unitName" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="unitName"/>
+			<fieldDescription><![CDATA[unitName]]></fieldDescription>
+		</field>
+		<field name="empCode" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="empCode"/>
+			<fieldDescription><![CDATA[empCode]]></fieldDescription>
+		</field>
+		<field name="remarks" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="remarks"/>
+			<fieldDescription><![CDATA[remarks]]></fieldDescription>
+		</field>
+		<field name="mobilePersonal" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="mobilePersonal"/>
+			<fieldDescription><![CDATA[mobilePersonal]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="Dataset3" uuid="32666415-6f9a-4ed9-bc83-2c7c5aeccb02">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Nomination"/>
+		<queryString language="json">
+			<![CDATA[data.trainingNominationApprovEmpInfoDto]]>
+		</queryString>
+		<field name="empName" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="empName"/>
+			<fieldDescription><![CDATA[empName]]></fieldDescription>
+		</field>
+		<field name="empCode" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="empCode"/>
+			<fieldDescription><![CDATA[empCode]]></fieldDescription>
+		</field>
+		<field name="mobileGov" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="mobileGov"/>
+			<fieldDescription><![CDATA[mobileGov]]></fieldDescription>
+		</field>
+		<field name="emailGov" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="emailGov"/>
+			<fieldDescription><![CDATA[emailGov]]></fieldDescription>
+		</field>
+		<field name="positionName" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="positionName"/>
+			<fieldDescription><![CDATA[positionName]]></fieldDescription>
+		</field>
+		<field name="unitName" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="unitName"/>
+			<fieldDescription><![CDATA[unitName]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="trainingStartDate" class="java.sql.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="trainingStartDate"/>
+		<fieldDescription><![CDATA[trainingStartDate]]></fieldDescription>
+	</field>
+	<field name="duration" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="duration"/>
+		<fieldDescription><![CDATA[duration]]></fieldDescription>
+	</field>
+	<field name="durationType" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="durationType"/>
+		<fieldDescription><![CDATA[durationType]]></fieldDescription>
+	</field>
+	<field name="subject" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="subject"/>
+		<fieldDescription><![CDATA[subject]]></fieldDescription>
+	</field>
+	<field name="dispatchNo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="dispatchNo"/>
+		<fieldDescription><![CDATA[dispatchNo]]></fieldDescription>
+	</field>
+	<field name="memoDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="memoDate"/>
+		<fieldDescription><![CDATA[memoDate]]></fieldDescription>
+	</field>
+	<field name="memoNo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="memoNo"/>
+		<fieldDescription><![CDATA[memoNo]]></fieldDescription>
+	</field>
+	<field name="toPosition" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="toPosition"/>
+		<fieldDescription><![CDATA[toPosition]]></fieldDescription>
+	</field>
+	<field name="trainingNominationEmpListDtos" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="trainingNominationEmpListDtos"/>
+		<fieldDescription><![CDATA[trainingNominationEmpListDtos]]></fieldDescription>
+	</field>
+	<field name="nominationDescriptionDtos" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nominationDescriptionDtos"/>
+		<fieldDescription><![CDATA[nominationDescriptionDtos]]></fieldDescription>
+	</field>
+	<field name="trainingNominationApprovEmpInfoDto" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="trainingNominationApprovEmpInfoDto"/>
+		<fieldDescription><![CDATA[trainingNominationApprovEmpInfoDto]]></fieldDescription>
+	</field>
+	<field name="cmemoNo" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="cmemoNo"/>
+		<fieldDescription><![CDATA[cmemoNo]]></fieldDescription>
+	</field>
+	<field name="cmemoDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="cmemoDate"/>
+		<fieldDescription><![CDATA[cmemoDate]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="607" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="4" width="550" height="76" uuid="f3730134-164f-4269-b7ca-abf31d726b4a"/>
+				<textElement textAlignment="Center">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<text><![CDATA[গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+বাংলাদেশ সরকার
+ঢাকা মেট্রোপলিটন পুলিশ হেডকোয়ার্টার্স
+36, শহীদ ক্যাপ্টেন মনসুর আলী সরনী, রমনা, ঢাকা-১০০০]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="80" width="280" height="30" uuid="35b0e1ec-a0b0-47a3-9609-6361c4681bfe"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN"/>
+				</textElement>
+				<textFieldExpression><![CDATA["স্বারক নং-"+$F{memoNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="80" width="100" height="30" uuid="f7af7604-c209-42d5-8842-4a58fd078f54"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN"/>
+				</textElement>
+				<textFieldExpression><![CDATA["তারিখ: "+new java.text.SimpleDateFormat("dd-mm-yyyy").format(new java.text.SimpleDateFormat("yyyy-mm-dd").parse($F{memoDate}))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="142" width="280" height="30" uuid="72a35558-638e-4601-8e8b-8050c2cb385d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toPosition}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="122" width="280" height="20" uuid="5bee42cf-5208-4b5b-96d1-1d3625c9ea50"/>
+				<box leftPadding="3"/>
+				<textElement>
+					<font fontName="NikoshBAN"/>
+				</textElement>
+				<text><![CDATA[প্রতি,]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="2" y="172" width="548" height="30" uuid="1c50f381-2d47-497a-a79a-1afcd9775445"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["বিষয়ঃ"+$F{subject}+""+$F{duration}+""+$F{durationType}+""+"মেয়াদী  বেতার মৌলিক প্রশিক্ষণ কোর্স এ অংশগ্রহনে লক্ষ্যে আগ্রহী কনস্টেবলদের নামের তালিকা প্রসঙ্গে।"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="202" width="550" height="28" uuid="4505f420-474e-473d-91f0-7caa320675c4"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["সূত্রঃ পুলিশ হেডকোয়ার্টার্স"+"স্মারক নং-"+$F{cmemoNo}+","+""+"তারিখ: "+new java.text.SimpleDateFormat("dd-mm-yyyy").format(new java.text.SimpleDateFormat("yyyy-mm-dd").parse($F{cmemoDate}))]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="0" y="240" width="550" height="60" uuid="299fbc30-dacf-4a14-8f01-bd3f913fac32">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="ceebe17a-d101-4235-83fc-114cb0566ad2">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("nominationDescriptionDtos.DESCRIPTION_1")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="550" uuid="a9ad604a-a8c0-46d7-806b-d0399c797bbf">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell height="30">
+							<textField>
+								<reportElement x="0" y="0" width="550" height="30" uuid="176fee21-7b2e-4a36-b05b-a28a67cec652"/>
+								<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement x="8" y="318" width="542" height="92" uuid="274e0773-6ffb-4267-bf2d-c221f2a3d554">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset2" uuid="4034cdf0-facc-4d5a-9fb7-9ae4d9fadce6">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("trainingNominationEmpListDtos")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="28" uuid="837e2cc6-fd76-406f-8328-36eb551e305f">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="28" height="30" uuid="8c265109-2d67-49b9-b1ca-1a7b4a273c1c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<text><![CDATA[ক্রঃনং]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="28" height="30" uuid="eb1c8654-2365-445f-ad5f-4893db044eb9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="232" uuid="19fa2e48-4c2f-4083-bae2-ca10b0c84d4c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="232" height="30" uuid="fe8fef6f-259e-42b7-895f-bb87a5c757e6"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<text><![CDATA[নাম, পদবী ও বিপি নম্বর]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="232" height="30" uuid="007c8cb1-7d0a-420c-b0c5-f766f1e146d3"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{empName}!=null?$F{empName}:"")+" "+($F{rankName}!=null?$F{rankName}:"")+""+($F{empCode}!=null?$F{empCode}:"")
+
+
+
+]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="120" uuid="d47a3b08-b673-481f-99eb-aa65fbfcd0a5">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="120" height="30" uuid="dc2d75d3-65d0-4f52-bb57-3aec4d1ed3bc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<text><![CDATA[বর্তমান কর্মস্থল]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="120" height="30" uuid="746c3f82-e9fb-458e-838f-75f6056ead4d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{unitName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="de2c7951-a8ae-4a7b-a0e0-60ea5a64a2c8">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="d1ecb8f2-5407-44bb-b425-cc49b9aa8790"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<text><![CDATA[মোবাইল]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="762e41d1-dd15-4d63-b071-4b8dee6ffed9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{mobilePersonal}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="2d6033cb-b6dd-4c0d-b89e-0df824ea9860">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="60" height="30" uuid="8ce4a432-5cef-4767-b090-36729f454ae0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<text><![CDATA[মন্তব্য]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="60" height="30" uuid="791e136c-7876-43bc-ac8b-4d63df8236f4"/>
+								<box leftPadding="3"/>
+								<textElement verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement x="230" y="500" width="320" height="93" uuid="11785f9f-e06e-4ac8-aaf9-7f44c29c8b86">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset3" uuid="27447ce6-2095-4428-b071-ad3e10e53e09">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("trainingNominationApprovEmpInfoDto")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="390" uuid="70ab1521-ebcc-426b-ade4-bef2e3ad0085">
+						<jr:columnHeader height="20">
+							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						</jr:columnHeader>
+						<jr:columnFooter height="30"/>
+						<jr:detailCell height="120">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+							<textField>
+								<reportElement x="0" y="0" width="390" height="20" uuid="def76bd5-bf69-4ac2-93c7-e55ad143aec7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA["("+""+$F{empName}+""+")"]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="0" y="20" width="390" height="20" uuid="5c4adb08-8c99-479d-8226-f00e34d3e4d4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="SansSerif"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{empCode}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="0" y="40" width="390" height="20" uuid="06ae733e-cb9a-473e-8434-8825d4aa17a5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{positionName}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="0" y="60" width="390" height="20" uuid="2be57d7a-bbc5-4669-b6da-d2baf227f7db"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{unitName}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="0" y="80" width="390" height="20" uuid="47c50057-ee4a-4f29-9e51-2ec1841b8935"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="NikoshBAN"/>
+								</textElement>
+								<textFieldExpression><![CDATA["ফোন-"+($F{mobileGov}!=null?$F{mobileGov}:"")]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="0" y="100" width="390" height="20" uuid="f689e922-c797-4b31-a5b7-c04844694d3f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA["E-mail-"+($F{emailGov}!=null?$F{emailGov}:"")]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

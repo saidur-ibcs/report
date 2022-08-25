@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rctleaveAppConsAsi" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="063d1f58-d695-45e8-aa94-bc41f191b78a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="rctleaveAppConsAsi"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String">
+		<defaultValueExpression><![CDATA["./"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="json">
+		<![CDATA[leaveAppConsAsi]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.name"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="nameNative" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.nameNative"/>
+		<fieldDescription><![CDATA[nameNative]]></fieldDescription>
+	</field>
+	<field name="positionName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.positionName"/>
+		<fieldDescription><![CDATA[positionName]]></fieldDescription>
+	</field>
+	<field name="positionNameNative" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.positionNameNative"/>
+		<fieldDescription><![CDATA[positionNameNative]]></fieldDescription>
+	</field>
+	<field name="reason" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.reason"/>
+		<fieldDescription><![CDATA[reason]]></fieldDescription>
+	</field>
+	<field name="medium" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.medium"/>
+		<fieldDescription><![CDATA[medium]]></fieldDescription>
+	</field>
+	<field name="presentAddress" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.presentAddress"/>
+		<fieldDescription><![CDATA[presentAddress]]></fieldDescription>
+	</field>
+	<field name="permanentAddress" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.permanentAddress"/>
+		<fieldDescription><![CDATA[permanentAddress]]></fieldDescription>
+	</field>
+	<field name="remainingLeave" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.remainingLeave"/>
+		<fieldDescription><![CDATA[remainingLeave]]></fieldDescription>
+	</field>
+	<field name="leaveDemand" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.leaveDemand"/>
+		<fieldDescription><![CDATA[leaveDemand]]></fieldDescription>
+	</field>
+	<field name="leaveDemandNative" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.leaveDemandNative"/>
+		<fieldDescription><![CDATA[leaveDemandNative]]></fieldDescription>
+	</field>
+	<field name="leaveDemandInWords" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.leaveDemandInWords"/>
+		<fieldDescription><![CDATA[leaveDemandInWords]]></fieldDescription>
+	</field>
+	<field name="toPosition" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.toPosition"/>
+	</field>
+	<field name="joinType" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.joinType"/>
+	</field>
+	<field name="bpCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="leaveAppConsAsi.bpCode"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="174" y="27" width="230" height="80" uuid="621cc44e-4119-4da0-bb6b-09b9ee9b5eb7"/>
+				<textElement verticalAlignment="Top" markup="styled">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["বরাবর"
++"\n"+($F{toPosition}!=null?$F{toPosition}:"")
++"\n"+"মাধ্যমঃ"+" "+($F{medium}!=null?$F{medium}:"যথাযথ কর্তৃপক্ষ ৷")
++"\n"+"\n"+"<style isBold='true' >"+"বিষয়ঃ"+ " "+"("+($F{leaveDemand}!=null?$F{leaveDemand}:"")+")"+" "+"দিনের নৈমিক্তিক ছুটির আবেদন ৷"+ "</style>"]]></textFieldExpression>
+			</textField>
+			<image onErrorType="Blank">
+				<reportElement x="2" y="1" width="50" height="50" uuid="a60fc645-b8b1-452c-848a-7fee4827d28f"/>
+				<imageExpression><![CDATA[$P{SUBREPORT_DIR}+"PIMS logo.jpg"]]></imageExpression>
+			</image>
+			<componentElement>
+				<reportElement x="607" y="-1" width="195" height="31" uuid="db3bc786-5c50-4e61-9d9e-05f83d05541e"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128B" drawText="true" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{bpCode}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30">
+			<staticText>
+				<reportElement x="0" y="0" width="175" height="30" uuid="64cf0ecb-f422-43f3-8cfd-9843dfde3f4a"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ঠিকানা]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="0" width="60" height="30" uuid="3ccf0e9d-88cf-4e2d-ba93-066919948de0"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[পাওনা ছুটি]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="0" width="60" height="30" uuid="d448bb26-2b7f-4881-83ba-4c15fb08563c"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ছুটির চাহিদা]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="0" width="290" height="30" uuid="d4784c42-8a3f-4c54-a14a-dbc2738f3e66"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[বিবরণ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="585" y="0" width="110" height="30" uuid="35dda437-bb21-4f21-b471-0e8e6ac438d4"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[আরআই স্যারের মন্তব্য]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="695" y="0" width="95" height="30" uuid="987ac72f-d242-4c92-94c4-67c444ad9869"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[এসএ স্যারের মন্তব্য]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="275" splitType="Stretch">
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="175" height="275" uuid="15eb9758-1023-492e-af2a-33ce9a8147f1"/>
+				<box leftPadding="3" rightPadding="3">
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="styled">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isBold='true' isUnderline='true'>"+"বর্তমান ঠিকানা"+ "</style>"
++"\n"+" "+($F{presentAddress}!=null?$F{presentAddress}:"")
++"\n"+"\n"+"\n"+"\n"+"<style isBold='true' isUnderline='true'>"+"স্থায়ী ঠিকানা"+ "</style>"
++"\n"+" "+($F{permanentAddress}!=null?$F{permanentAddress}:"")]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="175" y="0" width="60" height="275" uuid="0228f51b-82d9-40dc-9a02-6289029bbe42"/>
+				<box leftPadding="3" rightPadding="3">
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["("+($F{remainingLeave}!=null?$F{remainingLeave}:"")+")"+" "+"দিন ৷"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="295" y="0" width="290" height="275" uuid="85e24b54-b2e4-4f40-b659-b75da4642c78"/>
+				<box leftPadding="3" rightPadding="3">
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["\n"+
+"<style isBold='true' >"+"জনাব"+ "</style>"
++"\n"+"\n"+"   "+"যথাবিহিত সম্মান প্রদর্শন পূর্বক বিনীত নিবেদন এই যে, আমি"+" "+($F{joinType}!=null?$F{joinType}:"")+" "+($F{nameNative}!=null?$F{nameNative}:"")+" "+"আপনার অধীনস্থ একজন পুলিশ সদস্য ৷বর্তমানে"+" "+($F{presentAddress}!=null?$F{presentAddress}:"")+" "+"কর্মরত আছি ৷এমতাবস্থায় আমার"+" "+($F{reason}!=null?$F{reason}:"")+" "+"কারণে"+" "+"("+($F{leaveDemand}!=null?$F{leaveDemand}:"")+")"+""+"দিনের নৈমিত্তিক ছুটিতে যেতে ইচ্ছুক ৷"
++"\n"+"\n"+"   "+"অতএব,মহোদয়ের নিকট বিনীত নিবেদন এই যে,আমি যাতে"+" "+"("+($F{leaveDemand}!=null?$F{leaveDemand}:"")+")"+" "+"দিনের নৈমিত্তিক ছুটি পেতে পারি তার আদেশ দানে আপনার সদয় মর্জি কামনা করি ৷"
++"\n"+"\n"+"\n"+" "+"<style isBold='true'  isUnderline='true' isAlignment='right'>"+"বিনীত নিবেদক"+ "</style>"
++"\n"+"\n"+"\n"+"\n"+"<style  isAlignment='right'>"+"("+($F{nameNative}!=null?$F{nameNative}:"")+")"+ "</style>"
++"\n"+" "+"<style  isAlignment='right'>"+($F{joinType}!=null?$F{joinType}:"")+ "</style>"
++"\n"+" "+"<style  font='SolaimanLipi' fontSize='10'>"+($F{bpCode}!=null?$F{bpCode}:"")+ "</style>"
++"\n"+" "+"<style  isAlignment='right'>"+($F{positionNameNative}!=null?$F{positionNameNative}:"")+ "</style>"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="235" y="0" width="60" height="275" uuid="55920869-d2b7-4032-acaa-78abd61fe2c6"/>
+				<box leftPadding="3" rightPadding="3">
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["("+($F{leaveDemand}!=null?$F{leaveDemand}:"")+")"+" "+"দিন ৷"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="585" y="0" width="110" height="275" uuid="519ae220-c9d8-4d08-bb75-65ffe5becd8f"/>
+				<box leftPadding="3" rightPadding="3">
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="695" y="0" width="95" height="275" uuid="35cf18f9-4a67-4e2b-b3df-f02e5731f557"/>
+				<box leftPadding="3" rightPadding="3">
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

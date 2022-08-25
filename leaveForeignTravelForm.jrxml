@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="leaveForeignTravelForm" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5ab9dac8-2e14-4544-bfd7-dbc042812605">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="leaveForeignTravelForm"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String">
+		<defaultValueExpression><![CDATA["./"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.name"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="bpCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.bpCode"/>
+		<fieldDescription><![CDATA[bpCode]]></fieldDescription>
+	</field>
+	<field name="fatherName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.fatherName"/>
+		<fieldDescription><![CDATA[fatherName]]></fieldDescription>
+	</field>
+	<field name="country" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.country"/>
+		<fieldDescription><![CDATA[country]]></fieldDescription>
+	</field>
+	<field name="goingWithRelation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.goingWithRelation"/>
+		<fieldDescription><![CDATA[goingWithRelation]]></fieldDescription>
+	</field>
+	<field name="designation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.designation"/>
+		<fieldDescription><![CDATA[designation]]></fieldDescription>
+	</field>
+	<field name="unit" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.unit"/>
+		<fieldDescription><![CDATA[unit]]></fieldDescription>
+	</field>
+	<field name="goingWithAge" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.goingWithAge"/>
+		<fieldDescription><![CDATA[goingWithAge]]></fieldDescription>
+	</field>
+	<field name="totalCost" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.totalCost"/>
+		<fieldDescription><![CDATA[totalCost]]></fieldDescription>
+	</field>
+	<field name="totalCostInwords" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.totalCostInwords"/>
+		<fieldDescription><![CDATA[totalCostInwords]]></fieldDescription>
+	</field>
+	<field name="goingWithName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.goingWithName"/>
+		<fieldDescription><![CDATA[goingWithName]]></fieldDescription>
+	</field>
+	<field name="salaryScale" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.salaryScale"/>
+		<fieldDescription><![CDATA[salaryScale]]></fieldDescription>
+	</field>
+	<field name="travelDuration" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.travelDuration"/>
+		<fieldDescription><![CDATA[travelDuration]]></fieldDescription>
+	</field>
+	<field name="travelDurationInWord" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.travelDurationInWord"/>
+		<fieldDescription><![CDATA[travelDurationInWord]]></fieldDescription>
+	</field>
+	<field name="sourceOfFunding" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.sourceOfFunding"/>
+		<fieldDescription><![CDATA[sourceOfFunding]]></fieldDescription>
+	</field>
+	<field name="purpose" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.purpose"/>
+		<fieldDescription><![CDATA[purpose]]></fieldDescription>
+	</field>
+	<field name="earnedLeaveCount" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.earnedLeaveCount"/>
+		<fieldDescription><![CDATA[earnedLeaveCount]]></fieldDescription>
+	</field>
+	<field name="earnedLeaveCountInWords" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.earnedLeaveCountInWords"/>
+		<fieldDescription><![CDATA[earnedLeaveCountInWords]]></fieldDescription>
+	</field>
+	<field name="earnedLeaveCountry" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.earnedLeaveCountry"/>
+		<fieldDescription><![CDATA[earnedLeaveCountry]]></fieldDescription>
+	</field>
+	<field name="earnedLeaveCountriesStayed" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.earnedLeaveCountriesStayed"/>
+		<fieldDescription><![CDATA[earnedLeaveCountriesStayed]]></fieldDescription>
+	</field>
+	<field name="travelCostBearBy" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.travelCostBearBy"/>
+	</field>
+	<field name="foreignMoneyRecommendation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.foreignMoneyRecommendation"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="800" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="550" height="59" uuid="4e4bcd48-3091-4876-890c-ed5f5618f2b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="NikoshBAN" size="20" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[ব্যক্তিগত কারণে সরকারি/স্বায়ত্তশাসিত সংস্থার কর্মকর্তাদের বিদেশ ভ্রমণের আবেদনপত্র]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="75" width="270" height="30" uuid="bc6cb0ad-2d7e-4bb4-aed3-1b37cc067c43"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["1. "+"আবেদনকারীর নাম (স্পষ্টাক্ষরে) ও আইডি নং"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="105" width="270" height="30" uuid="d2a49aee-6b03-4b28-8487-85e15bf2ae13"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["2. "+"পিতা/স্বামীর নাম"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="135" width="270" height="50" uuid="e09dbc08-f4f9-4fa6-92fa-7f793466ec8f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["3. "+"পদবী ও অফিসের ঠিকানা"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="185" width="270" height="30" uuid="9e17910a-a298-44eb-a9d3-0e6882a59d32"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["4. "+"বেতন স্কেল"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="350" width="270" height="30" uuid="3fd03138-18bf-4340-8685-911a756b1813"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["8. "+"ভ্রমণের উদ্দেশ্যে"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="219" width="270" height="45" uuid="6dab9f76-8908-4aca-a1f7-aca32c2159b2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["5. "+"যে দেশ ভ্রমণ করবেন স্থানসমূহ ভ্রমণ করতে ইচ্ছুক তা উল্লেখ করতে হবে ৷"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="264" width="270" height="30" uuid="66a835e8-850d-49f4-90ef-700f754dd626"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["6. "+"প্রস্তাবিত ভ্রমণের মেয়াদ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="294" width="270" height="56" uuid="afca4100-3840-4db7-8839-6d5ec750fc3f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["7. "+"যদি পরিবারের সদস্য বা অন্য কাউকে সঙ্গে নিয়ে যেতে চান (তাদের নাম,বয়স ও আবেদনকারীর সংগে সম্পর্ক সম্পর্ক উল্লেখ করতে হবে ) ৷"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="506" width="270" height="58" uuid="c6786992-0496-4f7e-a60c-597d54303ea3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["12. "+"প্রস্তাবিত ভ্রমণ খরচ কিভাবে মিটানো হবে (নিজ ব্যতীত বিদেশে অবস্থানরত কোন আত্মীয়-স্বজন খরচ বহন করলে তার/তাদের পূর্ণ নাম ঠিকানা ৷"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="380" width="270" height="30" uuid="170712a3-0638-4935-9748-afc07ba30895"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["9. "+"শেষবার কবে ঐ দেশ ভ্রমণ করেছেন এবং কত দিনের জন্য"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="410" width="270" height="46" uuid="b71cc376-cb09-4f0d-b1b7-f5f050460abf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["10. "+"অর্জিত ছুটি(বহিঃবাংলাদেশ)গ্রহণ করে এই পর্যন্ত কোন কোন দেশ,কতবার মোট কতদিন ভ্রমণ করেছেন ৷"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="454" width="270" height="52" uuid="32bd1aaf-0cea-4e42-a710-ce5e5a0d5cd7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["11. "+"আনুমানিক খরচের পরিমাণ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="75" width="30" height="30" uuid="da92ea95-a88a-47b8-9a51-d43672971e6e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="105" width="30" height="30" uuid="790d2bdb-62fa-48c1-8b07-8bf691367ac3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="135" width="30" height="50" uuid="05bda39f-d97e-462a-8262-38c67ce28eab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="185" width="30" height="30" uuid="013f6239-1408-4db5-a94e-3225fd8170fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="214" width="30" height="45" uuid="003fe6d9-c17c-4c72-9f27-6021f0e553ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="350" width="30" height="30" uuid="64218caa-40ce-4dab-b4dd-7a7ee0130c4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="294" width="30" height="56" uuid="3fc68943-2eb1-4276-8ca1-70dbe80e54d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="264" width="30" height="30" uuid="0c08f79d-8b14-44cd-8ffb-6d45731eff7b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="380" width="30" height="30" uuid="090c6017-3425-45c0-bed5-e36c40b1ab83"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="506" width="30" height="58" uuid="30d533ca-5d2e-4a3f-944a-7c31f81916c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="454" width="30" height="52" uuid="73d9af9a-6e00-4ba5-8150-890cedcc14c4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="410" width="30" height="46" uuid="4c70e2f8-8239-4432-8d66-46566d46136e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="75" width="240" height="30" uuid="c5b8fdcd-691e-445f-b4cb-95f82ff30c29"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SolaimanLipi" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["জনাব"+"  "+($F{name}!=null?$F{name}:"")+","+($F{bpCode}!=null?$F{bpCode}:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="105" width="240" height="30" uuid="02a51d7b-4d77-4e80-b68c-0e3466dc09d0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{fatherName}!=null?$F{fatherName}:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="135" width="240" height="50" uuid="4c5a9d48-5e9f-40f3-ab9c-8b6aef74fa4a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{designation}!=null?$F{designation}:"")+"\n"+($F{unit}!=null?$F{unit}:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="185" width="240" height="30" uuid="a3956fa3-f218-4603-954c-2ab3092181fe"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{salaryScale}!=null?$F{salaryScale}:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="215" width="240" height="45" uuid="bc498628-145f-4dc4-9181-0e0c7deae949"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{country}!=null?$F{country}:"")+" "+"৷"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="264" width="240" height="30" uuid="628b4e83-c8ac-4e28-8369-1caeded1704c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{travelDuration}!=null?$F{travelDuration}:"")+" "+"("+($F{travelDurationInWord}!=null?$F{travelDurationInWord}:"")+")"+" "+"দিন ৷"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="294" width="240" height="56" uuid="69dfc2aa-0522-4594-a96f-f254c4fdb9c3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{goingWithName}!=null?$F{goingWithName}:"")+" "+"("+($F{goingWithAge}!=null?$F{goingWithAge}:"")+")"+"\n"+($F{goingWithRelation}!=null?$F{goingWithRelation}:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="350" width="240" height="30" uuid="4dbbb54e-fe1a-479f-93e5-7b4ebd7908ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{purpose}!=null?$F{purpose}:"")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="310" y="380" width="240" height="30" uuid="c626ed4c-42b0-40df-9090-22fb3e2ce26e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+			</textField>
+			<textField>
+				<reportElement x="310" y="410" width="240" height="46" uuid="57150aaf-8a9d-4bab-84c0-8883d40a5a47"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{earnedLeaveCountry}!=null?$F{earnedLeaveCountry}:"")+","+($F{earnedLeaveCountriesStayed}!=null?$F{earnedLeaveCountriesStayed}:"")
++"\n"+($F{earnedLeaveCount}!=null?$F{earnedLeaveCount}:"")+"("+($F{earnedLeaveCountInWords}!=null?$F{earnedLeaveCountInWords}:"")+")"+" "+"দিন ৷"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="454" width="240" height="52" uuid="ea46ee14-cd51-4662-8c6c-c4d14dfae5f5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{totalCost}!=null?$F{totalCost}:"")+"-/"+"  "+"("+($F{totalCostInwords}!=null?$F{totalCostInwords}:"")+" "+"টাকা)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="506" width="240" height="58" uuid="26fb2b5b-1439-4dca-b832-8c56a1af84c7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{travelCostBearBy}!=null?$F{travelCostBearBy}:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="598" width="240" height="86" uuid="3f012d73-b3b9-48ad-82cd-763f06fe45a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["আবেদনকারীর স্বাক্ষর"
++"\n"+"তারিখঃ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="669" width="270" height="62" uuid="e25153d7-9d2b-44ff-8d04-841138c554c8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["13. "+"সরকারের তরফ হতে কোন প্রকার বৈদেশিক মুদ্রা ব্যয় না,এই মর্মে প্রত্যায়ন সহ মন্ত্রণালয়/বিভাগ/অধিদপ্তর/অফিস প্রদানের সুপারিশ "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="669" width="30" height="62" uuid="7fc54a43-89d6-4f9f-94f4-651cfd020fae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[":"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="669" width="240" height="62" uuid="83dbbb94-9f44-4ca0-b840-0b0190eb0e66"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{foreignMoneyRecommendation}!=null?$F{foreignMoneyRecommendation}:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="770" width="240" height="30" uuid="c7708d15-1067-496f-bd4f-302e80ec6108"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="NikoshBAN" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["মন্ত্রণালয়/বিভাগ/অধিদপ্তর/অফিস প্রদানের স্বাক্ষর"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

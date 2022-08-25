@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="leaveProttayonLetter" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e08d220d-33f2-42c9-b160-96a4e2f09ee9">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="leaveProttayonLetter"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String">
+		<defaultValueExpression><![CDATA["./"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="policeSuper" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.policeSuper"/>
+		<fieldDescription><![CDATA[policeSuper]]></fieldDescription>
+	</field>
+	<field name="rank" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.rank"/>
+		<fieldDescription><![CDATA[rank]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.name"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="empCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.empCode"/>
+		<fieldDescription><![CDATA[empCode]]></fieldDescription>
+	</field>
+	<field name="leaveType" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.leaveType"/>
+		<fieldDescription><![CDATA[leaveType]]></fieldDescription>
+	</field>
+	<field name="totalLAPLeaveDuration" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.totalLAPLeaveDuration"/>
+		<fieldDescription><![CDATA[totalLAPLeaveDuration]]></fieldDescription>
+	</field>
+	<field name="policeSuperName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.policeSuperName"/>
+		<fieldDescription><![CDATA[policeSuperName]]></fieldDescription>
+	</field>
+	<field name="policeSuperEmpCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.policeSuperEmpCode"/>
+		<fieldDescription><![CDATA[policeSuperEmpCode]]></fieldDescription>
+	</field>
+	<field name="policeSuperDesignation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.policeSuperDesignation"/>
+		<fieldDescription><![CDATA[policeSuperDesignation]]></fieldDescription>
+	</field>
+	<field name="policeSuperDistrict" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.policeSuperDistrict"/>
+		<fieldDescription><![CDATA[policeSuperDistrict]]></fieldDescription>
+	</field>
+	<field name="policeSuperMobileNo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.policeSuperMobileNo"/>
+		<fieldDescription><![CDATA[policeSuperMobileNo]]></fieldDescription>
+	</field>
+	<field name="policeSuperEmail" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.policeSuperEmail"/>
+		<fieldDescription><![CDATA[policeSuperEmail]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="262" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="0" width="595" height="120" uuid="fb402bf0-352a-4cbf-9584-baa5882adc53"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="NikoshBAN" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["গণপ্রজাতন্ত্রী বাংলাদেশ সরকার"
++"\n"+"বাংলাদেশ পুলিশ"
++"\n"+($F{policeSuper}!=null?$F{policeSuper}:"")
+
++"\n"+"\n"+"<style isUnderline='true'>"+"প্রত্যয়ন পত্র"+"</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="118" width="535" height="144" uuid="ef6fc7a5-5e94-4c47-b966-7efc3469f88c"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="SolaimanLipi" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["        "+"এই মর্মে প্রত্যায়ন করা যাচ্ছে যে,"+" "+($F{policeSuperDistrict}!=null?$F{policeSuperDistrict}:"")+" "+"জেলায় কর্মরত"+" "+($F{policeSuperDesignation}!=null?$F{policeSuperDesignation}:"")+"/"+($F{policeSuperName}!=null?$F{policeSuperName}:"")+"("+($F{policeSuperEmpCode}!=null?$F{policeSuperEmpCode}:"")+")"+" "+"এর"+" "+($F{leaveType}!=null?$F{leaveType}:"")+" "+"আবেদন এর প্রেক্ষিতে চাকুরীর খতিয়ান বহি পর্যালোচনা করে দেখা যায়,তিনি"
++" "+($F{totalLAPLeaveDuration}!=null?$F{totalLAPLeaveDuration}:"")+" "+"পূর্ণ গড় বেতনে অর্জিত ছুটি পাওনা আছেন ৷"]]></textFieldExpression>
+			</textField>
+			<image onErrorType="Blank">
+				<reportElement x="0" y="1" width="50" height="50" uuid="c75c468c-1785-4acc-a2b3-5e8193285988"/>
+				<imageExpression><![CDATA[$P{SUBREPORT_DIR}+"PIMS logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="106" splitType="Stretch">
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="280" y="6" width="265" height="100" uuid="a30e86f9-1244-4a8f-9106-c717c8a38548"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="styled">
+					<font fontName="SolaimanLipi" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["("+($F{policeSuperName}!=null?$F{policeSuperName}:"")+","+($F{policeSuperDesignation}!=null?$F{policeSuperDesignation}:"")+")"
++"\n"+($F{policeSuperEmpCode}!=null?$F{policeSuperEmpCode}:"")
++"\n"+($F{policeSuperDistrict}!=null?$F{policeSuperDistrict}:"")
++"\n"+($F{policeSuperMobileNo}!=null?$F{policeSuperMobileNo}:"")
++"\n"+($F{policeSuperEmail}!=null?$F{policeSuperEmail}:"")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

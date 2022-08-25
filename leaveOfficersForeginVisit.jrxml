@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="leaveOfficersForeginVisit" pageWidth="612" pageHeight="1008" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ea020972-4cca-4140-a1d9-08df29c94c20">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="leaveOfficersForeginVisit"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="pastForeignVisitsDetails" uuid="028a30c0-a558-4368-97cc-90d2043bb89d">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="leaveOfficersForeginVisit"/>
+		<queryString language="json">
+			<![CDATA[data.ofvisPastForeignVisitDtos]]>
+		</queryString>
+		<field name="totalDays" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="totalDays"/>
+			<fieldDescription><![CDATA[totalDays]]></fieldDescription>
+		</field>
+		<field name="country" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="country"/>
+			<fieldDescription><![CDATA[country]]></fieldDescription>
+		</field>
+		<field name="remarks" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="remarks"/>
+		</field>
+	</subDataset>
+	<subDataset name="currentVisitsDetails" uuid="ad0c828b-fc27-4fdb-a6fb-55d660cdf8c3">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="leaveOfficersForeginVisit"/>
+		<queryString language="json">
+			<![CDATA[data.ofvisCurrentForeignVisitDto]]>
+		</queryString>
+		<field name="country" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="country"/>
+			<fieldDescription><![CDATA[country]]></fieldDescription>
+		</field>
+		<field name="srcOfFunding" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="srcOfFunding"/>
+			<fieldDescription><![CDATA[srcOfFunding]]></fieldDescription>
+		</field>
+		<field name="remarks" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="remarks"/>
+			<fieldDescription><![CDATA[remarks]]></fieldDescription>
+		</field>
+		<field name="purpose" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="purpose"/>
+			<fieldDescription><![CDATA[purpose]]></fieldDescription>
+		</field>
+		<field name="totalCost" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="totalCost"/>
+			<fieldDescription><![CDATA[totalCost]]></fieldDescription>
+		</field>
+		<field name="fromDate" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="fromDate"/>
+			<fieldDescription><![CDATA[fromDate]]></fieldDescription>
+		</field>
+		<field name="toDate" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="toDate"/>
+			<fieldDescription><![CDATA[toDate]]></fieldDescription>
+		</field>
+		<field name="totalDays" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="totalDays"/>
+			<fieldDescription><![CDATA[totalDays]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="PastForeignEmployee" uuid="9a35abe2-78d4-4d4c-8fd5-e3110bb7a187">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="leaveOfficersForeginVisit"/>
+		<queryString language="json">
+			<![CDATA[data.ofvisPastForeignEmployDtos]]>
+		</queryString>
+		<field name="employer" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="employer"/>
+			<fieldDescription><![CDATA[employer]]></fieldDescription>
+		</field>
+		<field name="country" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="country"/>
+			<fieldDescription><![CDATA[country]]></fieldDescription>
+		</field>
+		<field name="fromDate" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="fromDate"/>
+			<fieldDescription><![CDATA[fromDate]]></fieldDescription>
+		</field>
+		<field name="toDate" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="toDate"/>
+			<fieldDescription><![CDATA[toDate]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.name"/>
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="hrEmpId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.hrEmpId"/>
+		<fieldDescription><![CDATA[hrEmpId]]></fieldDescription>
+	</field>
+	<field name="code" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.code"/>
+		<fieldDescription><![CDATA[code]]></fieldDescription>
+	</field>
+	<field name="dob" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.dob"/>
+		<fieldDescription><![CDATA[dob]]></fieldDescription>
+	</field>
+	<field name="passportIssueDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.passportIssueDate"/>
+		<fieldDescription><![CDATA[passportIssueDate]]></fieldDescription>
+	</field>
+	<field name="passportNo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.passportNo"/>
+		<fieldDescription><![CDATA[passportNo]]></fieldDescription>
+	</field>
+	<field name="passportIssuePlace" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.passportIssuePlace"/>
+		<fieldDescription><![CDATA[passportIssuePlace]]></fieldDescription>
+	</field>
+	<field name="joinAsType" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.joinAsType"/>
+		<fieldDescription><![CDATA[joinAsType]]></fieldDescription>
+	</field>
+	<field name="ofvisPastForeignVisitDtos" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.ofvisPastForeignVisitDtos"/>
+		<fieldDescription><![CDATA[ofvisPastForeignVisitDtos]]></fieldDescription>
+	</field>
+	<field name="ofvisCurrentForeignVisitDto" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.ofvisCurrentForeignVisitDto"/>
+		<fieldDescription><![CDATA[ofvisCurrentForeignVisitDto]]></fieldDescription>
+	</field>
+	<field name="ofvisPastForeignEmployDtos" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.ofvisPastForeignEmployDtos"/>
+		<fieldDescription><![CDATA[ofvisPastForeignEmployDtos]]></fieldDescription>
+	</field>
+	<field name="ofvisCurrentForeignEmployDto" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.ofvisCurrentForeignEmployDto"/>
+		<fieldDescription><![CDATA[ofvisCurrentForeignEmployDto]]></fieldDescription>
+	</field>
+	<field name="designation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.designation"/>
+	</field>
+	<field name="unit" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.unit"/>
+	</field>
+	<field name="data.ofvisCurrentForeignVisitDto.country" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignVisitDto.remarks" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignVisitDto.purpose" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignVisitDto.totalCost" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignVisitDto.fromDate" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignVisitDto.toDate" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignVisitDto.totalDays" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignVisitDto.srcOfFunding" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.country" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.designation" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.salEarned" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.employer" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.fundRemitted" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.remittanceAcNo" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.bank" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.branch" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.fromDate" class="java.lang.String"/>
+	<field name="data.ofvisCurrentForeignEmployDto.toDate" class="java.lang.String"/>
+	<field name="data.ofvisPastForeignEmployDtos.employer" class="java.lang.String"/>
+	<field name="data.ofvisPastForeignEmployDtos.country" class="java.lang.String"/>
+	<field name="data.ofvisPastForeignEmployDtos.fromDate" class="java.lang.String"/>
+	<field name="data.ofvisPastForeignEmployDtos.toDate" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="255" splitType="Stretch">
+			<staticText>
+				<reportElement x="9" y="6" width="554" height="54" uuid="e99eee19-586c-4949-9f50-e79c109c810c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRESIDENT'S SECRETARIAT 
+INFORMATION ON OFFICER'S FOREIGN VISIT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="9" y="6" width="100" height="34" uuid="c29a2285-7fa7-4f1f-a3ad-9baa3ab56ade"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Form No."
++"\n"+"Dated:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="451" y="6" width="105" height="34" uuid="34a936d0-fc01-47ce-bb8b-174fe6a34f42"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["OFVIS FORM"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="451" y="78" width="105" height="30" uuid="49b1184e-4cf8-4250-acf0-eecefe31c052"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Earlier Ref.No."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="9" y="78" width="100" height="30" uuid="0873461b-c770-4a9d-9015-4d708cf3404f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ref.No.and Date"
++"\n"+"Date:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="9" y="129" width="360" height="30" uuid="ec1454f6-5673-4a78-849f-6dfd4c0f19a7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Name :"+" "+"<style isUnderline='true'>"+($F{name}!=null?$F{name}:"")+"</style>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="129" width="158" height="30" uuid="3c2a1e0f-3227-42fc-bb56-5081a3ba41b0"/>
+				<textElement verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Date of Birth :"+" "+($F{dob}!=null?$F{dob}:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="9" y="177" width="150" height="30" uuid="1c60d960-39d2-41d9-a403-2ed07cbe32e9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+("Bangladesh Police")+"</style>"+"\n"+"Cadre/Deptt./Org."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="177" width="100" height="30" uuid="d609d2c2-d41e-4439-9666-55aedb0db865"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{code}!=null?$F{code}:"")+"</style>"+"\n"+"Id No.(If any)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="277" y="177" width="92" height="30" uuid="40a2e47f-3aa2-46be-9eb3-e5ef802a8e3e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{passportNo}!=null?$F{passportNo}:"")+"</style>"+"\n"+"Passport No."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="177" width="178" height="30" uuid="c9df59a6-ba27-433f-a7a7-10d16fbe1892"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{passportIssueDate}!=null?$F{passportIssueDate}:"")+"</style>"
++","+"<style isUnderline='true'>"+($F{passportIssuePlace}!=null?$F{passportIssuePlace}:"")+"</style>"+"\n"+"Date and Place of Issue"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="9" y="225" width="547" height="30" uuid="a90e7815-fd65-4af4-a719-4be4e3d1e90c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{designation}!=null?$F{designation}:"")+","+($F{unit}!=null?$F{unit}:"")+"</style>"+"\n"+"Present Post And Name of Organization/Ministry"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="127" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="10" width="547" height="30" uuid="58395aa3-1c30-47b5-b4b5-696eb6507b2c"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["1.A"+"    "+"PAST FOREIGN VISIT(S): (for the past five years ending."]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement stretchType="RelativeToBandHeight" x="9" y="74" width="547" height="53" uuid="674f6633-3c3c-4f98-8287-fa5b84cd6f6a"/>
+				<componentElement>
+					<reportElement stretchType="RelativeToBandHeight" x="9" y="23" width="440" height="30" uuid="58211950-9e82-4672-bde7-5a497d93a409">
+						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					</reportElement>
+					<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+						<datasetRun subDataset="pastForeignVisitsDetails" uuid="06f534d6-1fc0-4ae6-bc4b-38caad4dd8c0">
+							<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data.ofvisPastForeignVisitDtos")]]></dataSourceExpression>
+						</datasetRun>
+						<jr:column width="140" uuid="89198f9b-fdd8-4c67-98a2-748c17c4441c">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+							<jr:detailCell height="30">
+								<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="140" height="30" uuid="a150b6e0-1b7f-49bc-ba07-160639026f5f"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+										<font fontName="Arial" size="11"/>
+									</textElement>
+									<textFieldExpression><![CDATA[$V{REPORT_COUNT}+"."]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="210" uuid="560f99bb-c29a-4f6f-8838-f1f2eb36d302">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+							<jr:detailCell height="30">
+								<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="210" height="30" uuid="d1ec4c91-b103-4d81-8271-282908a9d189"/>
+									<box leftPadding="3"/>
+									<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial" size="11"/>
+									</textElement>
+									<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{country}!=null?$F{country}:"")+"</style>"]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90" uuid="11fc10f9-1c12-4949-a868-7a04773ff1f2">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+							<jr:detailCell height="30">
+								<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+									<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="90" height="30" uuid="b37679b4-0b83-42f7-876c-20df74e31266"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+										<font fontName="Arial" size="11"/>
+									</textElement>
+									<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{totalDays}!=null?$F{totalDays}:"")+" "+"Days"+"</style>"]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:table>
+				</componentElement>
+				<staticText>
+					<reportElement x="359" y="0" width="80" height="23" uuid="1797fc9e-cfdf-47a4-9877-fb4657dd62fe"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Total Duration :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="9" y="0" width="140" height="23" uuid="3de192bb-7f88-43cd-afbb-77a897f42a2b"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None"/>
+					<text><![CDATA[SL.No]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="149" y="0" width="180" height="23" uuid="69e884b0-bf92-44c6-a3e7-a18df1c46b48"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle"/>
+					<text><![CDATA[Number of Visits :]]></text>
+				</staticText>
+			</frame>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="9" y="40" width="220" height="30" uuid="ba6d79ca-2752-40ad-90d4-078f78f22eda"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Country and Purpose Code*"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="243" y="40" width="220" height="30" uuid="03742b4b-a384-4123-867a-27eb871b93c8"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["(Example : USA.5)"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="10" y="0" width="547" height="20" uuid="471b020a-75f2-4481-a6a7-87888bae07f1"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["(Use extra sheet if required)"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="154" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="10" width="548" height="30" uuid="10b2c85c-e0ed-4030-8dbd-1f7d9e0c7c56"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["1.B"+"    "+"CURRENT VISITS"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="9" y="40" width="220" height="30" uuid="9acee381-f6e3-45a2-bb2a-57cb6ac2262b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignVisitDto.fromDate}!=null?$F{data.ofvisCurrentForeignVisitDto.fromDate}:"")+" "+"to"+" "+($F{data.ofvisCurrentForeignVisitDto.toDate}!=null?$F{data.ofvisCurrentForeignVisitDto.toDate}:"")+","+($F{data.ofvisCurrentForeignVisitDto.totalDays}!=null?$F{data.ofvisCurrentForeignVisitDto.totalDays}:"")+" "+"Days"+"</style>"
++"\n"+"Period"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="229" y="40" width="170" height="30" uuid="06518042-5cdd-4692-9156-262fc33993de"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignVisitDto.srcOfFunding}!=null?$F{data.ofvisCurrentForeignVisitDto.srcOfFunding}:"")+"</style>"
++"\n"+"Source of Funding"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="399" y="40" width="158" height="30" uuid="925bed2c-3618-480a-818f-b445698d60f9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignVisitDto.totalCost}!=null?$F{data.ofvisCurrentForeignVisitDto.totalCost}:"")+"</style>"
++"\n"+"Total Cost(in Taka)"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="9" y="113" width="121" height="30" uuid="ee3df819-315c-4fc5-9046-459294752583"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignVisitDto.remarks}!=null?$F{data.ofvisCurrentForeignVisitDto.remarks}:"")+"</style>"
++"\n"+"Remarks (If any)"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="11" y="78" width="220" height="30" uuid="c5e3b7c6-10ae-4a04-960b-8e58b3684976"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Country and Purpose Code*"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="237" y="78" width="220" height="30" uuid="2808f6e2-00ec-4355-be5f-9cf8d63133d8"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["(For Example USA I)"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="91" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="11" width="547" height="30" uuid="3f8155e1-b2b1-4252-81e5-a0e1582e2e16"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["2.A."+"PAST FOREIGN EMPLOYMENT :"+"..........................Yrs...................................Months...........................Days."
++"\n"+"(Including JOB Posting)"]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement stretchType="RelativeToBandHeight" x="8" y="51" width="548" height="35" uuid="4a02f712-e1a1-4aad-9cf9-79ed3131924e">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="PastForeignEmployee" uuid="15c983c7-a84b-4f6e-a7c9-89f06d9b686d">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("data.ofvisPastForeignEmployDtos")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="200" uuid="6c883aff-40e9-46b1-b1c3-4f720c892407">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:detailCell height="30">
+							<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="200" height="30" uuid="9657b634-8335-4166-9f5d-3a5fb63bd1ee"/>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{fromDate}!=null?$F{fromDate}:"")+" "+"To"+" "+($F{toDate}!=null?$F{toDate}:"")+"</style>"
++"\n"+"Duration"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="190" uuid="8d7b4380-b17b-4da4-ba66-0ca0e2cd54a6">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:detailCell height="30">
+							<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="190" height="30" uuid="828ef53f-dcc1-43af-925e-abf93ecd955a"/>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{employer}!=null?$F{employer}:"")+"</style>"
++"\n"+"Employer(s)"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="150" uuid="7fe7ce5a-7910-47f2-bc0f-ee18d6d45129">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:detailCell height="30">
+							<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="150" height="30" uuid="33ffec70-a426-4b66-88d7-13d826c2531a"/>
+								<textElement verticalAlignment="Middle" markup="styled">
+									<font fontName="Arial" size="11"/>
+								</textElement>
+								<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{country}!=null?$F{country}:"")+"</style>"
++"\n"+"Country(ies)of Posting."]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+		<band height="150" splitType="Stretch">
+			<textField>
+				<reportElement x="8" y="0" width="548" height="30" uuid="84188551-bf71-4824-86d0-db0f2274a069"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["2.B."+"CURRENT FOREIGN EMPLOYMENT :"
++"\n"+"(Including JOB Posting)"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="8" y="40" width="159" height="30" uuid="e943faae-db50-43d4-b3a2-fb83eb7b32ce"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignEmployDto.fromDate}!=null?$F{data.ofvisCurrentForeignEmployDto.fromDate}:"")+" "+"To"+" "+($F{data.ofvisCurrentForeignEmployDto.toDate}!=null?$F{data.ofvisCurrentForeignEmployDto.toDate}:"")+"</style>"
++"\n"+"Period"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="181" y="40" width="178" height="30" uuid="8cccbe5d-6a87-4f60-99e9-759406b2a3e5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignEmployDto.designation}!=null?$F{data.ofvisCurrentForeignEmployDto.designation}:"")+"</style>"
++"\n"+"Designation Post"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement x="375" y="40" width="158" height="30" uuid="4e892c73-e4be-4bfd-97f2-297edc48fe3a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignEmployDto.employer}!=null?$F{data.ofvisCurrentForeignEmployDto.employer}:"")+"</style>"
++"\n"+"Employer)"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="8" y="80" width="159" height="30" uuid="07248ef6-a5a4-43cb-ae28-f06e37360dbb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignEmployDto.country}!=null?$F{data.ofvisCurrentForeignEmployDto.country}:"")+"</style>"
++"\n"+"Country (ies of )Posting."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="181" y="80" width="178" height="30" uuid="acb98fb1-12c7-4353-aec9-0966aa934352"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignEmployDto.salEarned}!=null?$F{data.ofvisCurrentForeignEmployDto.salEarned}:"")+"</style>"
++"\n"+"Salary Earned(TK)"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="375" y="80" width="158" height="30" uuid="f8efa2b3-1fb3-4565-8ba1-45dc323c81fa"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignEmployDto.fundRemitted}!=null?$F{data.ofvisCurrentForeignEmployDto.fundRemitted}:"")+"</style>"
++"\n"+"Fund Remitted (TK)"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="8" y="120" width="159" height="30" uuid="de571ba9-96d6-497f-98e3-314d0605bba1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignEmployDto.remittanceAcNo}!=null?$F{data.ofvisCurrentForeignEmployDto.remittanceAcNo}:"")+"</style>"
++"\n"+"Remittance A/C's No."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="179" y="120" width="179" height="30" uuid="03e9bcd4-1598-4bc3-9e7c-dd818edf1c44"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<style isUnderline='true'>"+($F{data.ofvisCurrentForeignEmployDto.bank}!=null?$F{data.ofvisCurrentForeignEmployDto.bank}:"")+","+($F{data.ofvisCurrentForeignEmployDto.branch}!=null?$F{data.ofvisCurrentForeignEmployDto.branch}:"")+"</style>"
++"\n"+"With Bank Branch"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

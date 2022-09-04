@@ -189,7 +189,7 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="trainingNominationApprovEmpInfoDto"/>
 		<fieldDescription><![CDATA[trainingNominationApprovEmpInfoDto]]></fieldDescription>
 	</field>
-	<field name="cmemoNo" class="java.lang.Integer">
+	<field name="cmemoNo" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="cmemoNo"/>
 		<fieldDescription><![CDATA[cmemoNo]]></fieldDescription>
 	</field>
@@ -320,11 +320,7 @@
 								<textElement verticalAlignment="Middle">
 									<font fontName="NikoshBAN"/>
 								</textElement>
-								<textFieldExpression><![CDATA[($F{empName}!=null?$F{empName}:"")+" "+($F{rankName}!=null?$F{rankName}:"")+""+($F{empCode}!=null?$F{empCode}:"")
-
-
-
-]]></textFieldExpression>
+								<textFieldExpression><![CDATA[($F{empName}!=null?$F{empName}:"")+" "+($F{rankName}!=null?$F{rankName}:"")+""+($F{empCode}!=null?$F{empCode}:"")]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>

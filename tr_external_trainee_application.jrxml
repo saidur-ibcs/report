@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rctTrcDistributionReport" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="487" leftMargin="72" rightMargin="36" topMargin="50" bottomMargin="20" uuid="65d5ed12-4c6a-4d15-be3d-d71dc25ef6b4">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tr_external_trainee_application" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="487" leftMargin="72" rightMargin="36" topMargin="50" bottomMargin="20" uuid="65d5ed12-4c6a-4d15-be3d-d71dc25ef6b4">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="401"/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="1_bp_external_trainee_application"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="externalTrainingApplication"/>
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="288"/>
 	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="698"/>
@@ -230,11 +230,11 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="data.subject"/>
 		<fieldDescription><![CDATA[subject]]></fieldDescription>
 	</field>
-	<field name="positionDistributionIds" class="java.lang.String">
+	<field name="positionDistributionIds" class="java.lang.Integer">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.positionDistributionIds"/>
 		<fieldDescription><![CDATA[positionDistributionIds]]></fieldDescription>
 	</field>
-	<field name="positionCcIds" class="java.lang.String">
+	<field name="positionCcIds" class="java.lang.Integer">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.positionCcIds"/>
 		<fieldDescription><![CDATA[positionCcIds]]></fieldDescription>
 	</field>
@@ -254,13 +254,13 @@
 		<property name="net.sf.jasperreports.json.field.expression" value="data.code"/>
 		<fieldDescription><![CDATA[code]]></fieldDescription>
 	</field>
-	<field name="empPosition" class="java.lang.String">
-		<property name="net.sf.jasperreports.json.field.expression" value="data.empPosition"/>
-		<fieldDescription><![CDATA[empPosition]]></fieldDescription>
-	</field>
 	<field name="rankName" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.rankName"/>
 		<fieldDescription><![CDATA[rankName]]></fieldDescription>
+	</field>
+	<field name="empPosition" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="data.empPosition"/>
+		<fieldDescription><![CDATA[empPosition]]></fieldDescription>
 	</field>
 	<field name="trainingPositionDistributionDtos" class="java.lang.String">
 		<property name="net.sf.jasperreports.json.field.expression" value="data.trainingPositionDistributionDtos"/>
@@ -278,9 +278,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="106" splitType="Stretch">
+		<band height="100" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="486" height="80" uuid="eefd8d4d-486e-4550-bc66-6c08f1827a45">
+				<reportElement x="-21" y="0" width="467" height="80" uuid="eefd8d4d-486e-4550-bc66-6c08f1827a45">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -294,15 +294,15 @@
 www.police.gov.bd]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="83" width="370" height="17" uuid="85667bb3-fa7f-4ce2-b0ee-34bd4cca3d70"/>
+				<reportElement x="-22" y="83" width="330" height="17" uuid="85667bb3-fa7f-4ce2-b0ee-34bd4cca3d70"/>
 				<box leftPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="NikoshBAN" size="11" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["স্মারক নং - "+$F{memoNo}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["স্মারক নং - "+($F{memoNo}!=null?$F{memoNo}:"")]]></textFieldExpression>
 			</textField>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="370" y="83" width="116" height="17" uuid="a2cd1dfd-8f4d-4629-a2ce-dc233aa5f330"/>
+				<reportElement x="348" y="83" width="116" height="17" uuid="a2cd1dfd-8f4d-4629-a2ce-dc233aa5f330"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="NikoshBAN" size="11" isBold="true"/>
 				</textElement>
@@ -319,7 +319,7 @@ www.police.gov.bd]]></text>
 	<detail>
 		<band height="22" splitType="Stretch">
 			<textField textAdjust="StretchHeight" evaluationTime="Report" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="0" y="2" width="486" height="20" uuid="a53d0d92-48bf-4349-a1b7-b305deccab44">
+				<reportElement stretchType="RelativeToBandHeight" x="-22" y="2" width="486" height="20" uuid="a53d0d92-48bf-4349-a1b7-b305deccab44">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -327,12 +327,12 @@ www.police.gov.bd]]></text>
 				<textElement textAlignment="Justified" verticalAlignment="Middle">
 					<font fontName="NikoshBAN" size="11"/>
 				</textElement>
-				<textFieldExpression><![CDATA["বিষয়ঃ " + $F{subject}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["বিষয়ঃ " +($F{subject}!=null?$F{subject}:"")]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="26" splitType="Stretch">
 			<componentElement>
-				<reportElement x="0" y="6" width="487" height="20" uuid="4fbc2891-bbfb-43f0-a7c0-0498422f71d4">
+				<reportElement x="-22" y="6" width="487" height="20" uuid="4fbc2891-bbfb-43f0-a7c0-0498422f71d4">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
@@ -355,7 +355,7 @@ www.police.gov.bd]]></text>
 								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="487" height="20" uuid="5ba87b32-ffd7-4887-b347-6a23cb41e8d9">
 									<property name="com.jaspersoft.studio.unit.height" value="px"/>
 								</reportElement>
-								<textElement verticalAlignment="Top">
+								<textElement textAlignment="Justified" verticalAlignment="Top">
 									<font fontName="NikoshBAN"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
@@ -367,7 +367,7 @@ www.police.gov.bd]]></text>
 		</band>
 		<band height="23" splitType="Stretch">
 			<componentElement>
-				<reportElement x="0" y="6" width="487" height="17" uuid="35591ba8-6cba-45ac-9dbe-9260925d01f2">
+				<reportElement x="-22" y="6" width="487" height="17" uuid="35591ba8-6cba-45ac-9dbe-9260925d01f2">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
@@ -394,7 +394,7 @@ www.police.gov.bd]]></text>
 									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 								</reportElement>
 								<box leftPadding="0"/>
-								<textElement verticalAlignment="Middle">
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
 									<font fontName="NikoshBAN" size="10"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
@@ -406,7 +406,7 @@ www.police.gov.bd]]></text>
 		</band>
 		<band height="28" splitType="Stretch">
 			<componentElement>
-				<reportElement x="0" y="6" width="487" height="22" uuid="5be4d61c-ef54-4690-8d60-1ae0c858f533">
+				<reportElement x="-22" y="6" width="487" height="22" uuid="5be4d61c-ef54-4690-8d60-1ae0c858f533">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 4_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 4_CH"/>
@@ -430,7 +430,7 @@ www.police.gov.bd]]></text>
 								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="486" height="20" uuid="01faadba-0826-4fbc-80ab-77afe13d9b71">
 									<property name="com.jaspersoft.studio.unit.height" value="px"/>
 								</reportElement>
-								<textElement>
+								<textElement textAlignment="Justified">
 									<font fontName="NikoshBAN" size="10"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
@@ -442,7 +442,7 @@ www.police.gov.bd]]></text>
 		</band>
 		<band height="92" splitType="Stretch">
 			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="330" y="8" width="156" height="64" uuid="33184233-34da-4c9c-bd9b-58046da25a4f">
+				<reportElement stretchType="RelativeToBandHeight" x="308" y="8" width="156" height="64" uuid="33184233-34da-4c9c-bd9b-58046da25a4f">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
@@ -454,7 +454,7 @@ www.police.gov.bd]]></text>
 "মোবাইলঃ "+($F{emailGovt}!=null?$F{emailGovt}:"")]]></textFieldExpression>
 			</textField>
 			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="0" y="72" width="240" height="20" uuid="1404a8d3-80ed-4177-91d8-47c0c8ff3ca1">
+				<reportElement stretchType="RelativeToBandHeight" x="-22" y="72" width="240" height="20" uuid="1404a8d3-80ed-4177-91d8-47c0c8ff3ca1">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<box leftPadding="10"/>
@@ -469,15 +469,15 @@ www.police.gov.bd]]></text>
 		</band>
 		<band height="24">
 			<textField isBlankWhenNull="true">
-				<reportElement x="0" y="7" width="370" height="17" uuid="9bdd50d5-7196-4719-9876-09b0d84d2559"/>
+				<reportElement x="-22" y="7" width="370" height="17" uuid="9bdd50d5-7196-4719-9876-09b0d84d2559"/>
 				<box leftPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="NikoshBAN" size="11" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["স্মারক নং - "+$F{memoNo}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["স্মারক নং - "+($F{memoNo}!=null?$F{memoNo}:"")]]></textFieldExpression>
 			</textField>
 			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
-				<reportElement x="370" y="7" width="116" height="17" uuid="df3cfecf-de70-4238-94bc-2045ec48e4d5"/>
+				<reportElement x="348" y="7" width="116" height="17" uuid="df3cfecf-de70-4238-94bc-2045ec48e4d5"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font fontName="NikoshBAN" size="11" isBold="true"/>
 				</textElement>
@@ -487,9 +487,9 @@ www.police.gov.bd]]></text>
             ) ))]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="49">
+		<band height="42">
 			<componentElement>
-				<reportElement x="0" y="9" width="487" height="40" uuid="a05898b5-074a-4f36-b403-db79e93b6e36">
+				<reportElement x="-22" y="2" width="487" height="40" uuid="a05898b5-074a-4f36-b403-db79e93b6e36">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 5_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 5_CH"/>
@@ -545,16 +545,16 @@ www.police.gov.bd]]></text>
 								<textElement verticalAlignment="Middle">
 									<font fontName="NikoshBAN" size="11"/>
 								</textElement>
-								<textFieldExpression><![CDATA[$F{positionName}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[($F{positionName}!=null?$F{positionName}:"")]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
 				</jr:table>
 			</componentElement>
 		</band>
-		<band height="31">
+		<band height="22">
 			<componentElement>
-				<reportElement x="0" y="10" width="487" height="21" uuid="25341108-3830-43bc-974a-bd2abb8521aa">
+				<reportElement x="-22" y="1" width="487" height="21" uuid="25341108-3830-43bc-974a-bd2abb8521aa">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 5_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 5_CH"/>
@@ -610,7 +610,7 @@ www.police.gov.bd]]></text>
 								<textElement verticalAlignment="Middle">
 									<font fontName="NikoshBAN" size="11"/>
 								</textElement>
-								<textFieldExpression><![CDATA[$F{positionName}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[($F{positionName}!=null?$F{positionName}:"")]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
@@ -619,7 +619,7 @@ www.police.gov.bd]]></text>
 		</band>
 		<band height="72">
 			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
-				<reportElement stretchType="RelativeToBandHeight" x="330" y="8" width="156" height="64" uuid="3761545f-550e-4fb7-8ad0-7753b601abfe">
+				<reportElement stretchType="RelativeToBandHeight" x="308" y="8" width="156" height="64" uuid="3761545f-550e-4fb7-8ad0-7753b601abfe">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
@@ -635,7 +635,7 @@ www.police.gov.bd]]></text>
 	<pageFooter>
 		<band height="16">
 			<textField>
-				<reportElement x="156" y="0" width="150" height="16" uuid="e477d2b1-4925-4383-90e1-b15c20a5a4d0">
+				<reportElement x="134" y="0" width="150" height="16" uuid="e477d2b1-4925-4383-90e1-b15c20a5a4d0">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
